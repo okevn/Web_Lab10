@@ -1,0 +1,21 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+/img/shapka_peep1.png
+/img/peep1.jpg
+/img/best_album1.jpg
+/img/best_album2.jpg
+/img/album_live_forever.jpg
+/img/instagram-logo.jpg
+news.html
+css/style.css
+style_news.css
+style_main.css
+
+
+NETWORK:
+*
+
+FALLBACK:
+/ error.html

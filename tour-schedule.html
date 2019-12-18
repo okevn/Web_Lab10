@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Tour Schedule</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <link href="tour-schedule.css" rel="stylesheet" type="text/css">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(
+            function () {
+                $('.menu-toggle').click(function () {
+                    $('nav').toggleClass('active')
+                });
+
+                $('ul li').click(function () {
+                    $(this).siblings().removeClass('active');
+                    $(this).toggleClass('active');
+                })
+            }
+        )
+    </script>
+</head>
+<body class="bg-dark">
+<header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Main</a>
+            </li>
+            <li><a href="news.html">News</a>
+            </li>
+            <li class="sub-menu"><a href="#">For fans</a>
+                <ul  style="z-index: 3;">
+                    <li><a href="index.html">For club</a>
+                    </li>
+                    <li><a href="tour-schedule.html">Tour
+
+                        schedule</a>
+                    </li>
+                    <li  style="z-index: 3;"><a href="">Lyrics</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="fans-appeal.html">Fans appeal</a>
+            </li>
+            <li><a href="concert-venue.html">Concert Venue</a>
+            </li>
+            <li><a href="admin.html">Admin</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="menu-toggle"><i aria-hidden="true" class="fa fa-bars"></i>
+    </div>
+</header>
+<main>
+    <h1>
+        Tour Schedule
+    </h1>
+    <table class="table table-dark table-hover">
+        <thead class="thead-light">
+        <tr>
+            <th>
+                Date of performance
+            </th>
+            <th>
+                City
+            </th>
+            <th>
+                Performance time
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                11.10.2019
+            </td>
+            <td>
+                Las Vegas, NV
+            </td>
+            <td>
+                8:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                12.10.2019
+            </td>
+            <td>
+                Phoenix, AZ
+            </td>
+            <td>
+                8:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                18.10.2019
+            </td>
+            <td>
+                Zapopan, Mexico
+            </td>
+            <td>
+                3:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                22.10.2019
+            </td>
+            <td>
+                Mexico, Mexico
+            </td>
+            <td>
+                8:30 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                31.10.2019
+            </td>
+            <td>
+                Orlando, FL
+            </td>
+            <td>
+                6:30 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                01.11.2019
+            </td>
+            <td>
+                Fort Lauderdale, FL
+            </td>
+            <td>
+                7:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                02.11.2019
+            </td>
+            <td>
+                Tampa, FL
+            </td>
+            <td>
+                6:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                04.11.2019
+            </td>
+            <td>
+                Athens, GA
+            </td>
+            <td>
+                9:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                05.11.2019
+            </td>
+            <td>
+                Charlotte, NC
+            </td>
+            <td>
+                8:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                06.11.2019
+            </td>
+            <td>
+                Raleigh, NC
+            </td>
+            <td>
+                8:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                08.11.2019
+            </td>
+            <td>
+                Pittsburgh, PA
+            </td>
+            <td>
+                7:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                09.11.2019
+            </td>
+            <td>
+                Detroit, MI
+            </td>
+            <td>
+                7:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                11.11.2019
+            </td>
+            <td>
+                Colambus, OH
+            </td>
+            <td>
+                7:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                12.11.2019
+            </td>
+            <td>
+                Cincinnati, OH
+            </td>
+            <td>
+                7:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                14.11.2019
+            </td>
+            <td>
+                Indianapolis, IN
+            </td>
+            <td>
+                8:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                15.11.2019
+            </td>
+            <td>
+                St Louis, MO
+            </td>
+            <td>
+                8:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                16.11.2019
+            </td>
+            <td>
+                Kansas City, MO
+            </td>
+            <td>
+                8:00 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                04.02.2020
+            </td>
+            <td>
+                Kyiv, Ukraine
+            </td>
+            <td>
+                7:00 PM
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+<footer class="sticky-bottom">
+    <div class="left_footer">
+        <p>First Access Entertainment</p>
+    </div>
+
+    <div class="center_footer">
+        <p>Copyright 2019</p>
+    </div>
+
+    <div class="right_footer">
+        <p>Follow us
+            <br>
+            <a href="https://ru-ru.facebook.com/lilpeepmusic"><img
+                    src="/Users/admin/Documents/web_labs/WebLab2/img/facebook_logo.png"></a>
+            <a href="https://www.instagram.com/lilpeep/?hl=ru"><img
+                    src="/Users/admin/Documents/web_labs/WebLab2/img/instagram-logo.jpg"></a>
+            <a href="https://www.youtube.com/channel/UC0gOw4iy-6HwO01q-gA1B0Q"><img
+                    src="/Users/admin/Documents/web_labs/WebLab2/img/youtube.jpg"></a>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Lil Peep</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <link href="admin.css" rel="stylesheet" type="text/css">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(
+            function () {
+                $('.menu-toggle').click(function () {
+                    $('nav').toggleClass('active')
+                });
+
+                $('ul li').click(function () {
+                    $(this).siblings().removeClass('active');
+                    $(this).toggleClass('active');
+                })
+            }
+        )
+    </script>
+</head>
+
+<body class="bg-dark">
+<header>
+
+    <nav style="background-color: #111111; z-index: 5;">
+        <ul>
+            <li><a href="index.html">Main</a>
+            </li>
+            <li><a href="news.html">News</a>
+            </li>
+            <li class="sub-menu"><a href="#">For fans</a>
+                <ul>
+                    <li><a href="index.html">For club</a>
+                    </li>
+                    <li><a href="tour-schedule.html">Tour
+
+                        schedule</a>
+                    </li>
+                    <li><a href="">Lyrics</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="fans-appeal.html">Fans appeal</a>
+            </li>
+            <li><a href="concert-venue.html">Concert Venue</a>
+            </li>
+            <li><a href="admin.html">Admin</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="menu-toggle"><i aria-hidden="true" class="fa fa-bars"></i>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <form>
+            <div class="row mt-3 p-3">
+                <!-- <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <input type="button" class="form-control btn btn-light" value="Add photo">
+                </div> -->
+                <div class="custom-file col-12 col-md-4 mb-2 mb-md-0">
+                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                    <label class="custom-file-label" for="customFile" id="placeholder">Choose file</label>
+                </div>
+                <div class="col-12 col-md-8 text-center">
+                    <img src="img/no-image_7299.png" id="imgPreview" class="img-fluid">
+                </div>
+            </div>
+        </form>
+        <form>
+            <div class="row mt-3 p-3">
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <input type="button" class="form-control btn btn-light" onclick="add_news()" value="Send">
+                </div>
+                <div class="col-12 col-md-8 text-center">
+                    <input type="text" class="form-control mb-2" id="newsTitle" placeholder="News title">
+                    <textarea class="form-control" placeholder="News body" id="newsBody" rows="7"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+<!-- FOOTER -->
+<footer class="sticky-bottom">
+    <div class="left_footer">
+        <p>First Access Entertainment</p>
+    </div>
+
+    <div class="center_footer">
+        <p>Copyright 2019</p>
+    </div>
+
+    <div class="right_footer">
+        <p>Follow us
+            <br>
+            <a href="https://ru-ru.facebook.com/lilpeepmusic"><img
+                    src="/Users/admin/Documents/web_labs/WebLab2/img/facebook_logo.png"></a>
+            <a href="https://www.instagram.com/lilpeep/?hl=ru"><img
+                    src="/Users/admin/Documents/web_labs/WebLab2/img/instagram-logo.jpg"></a>
+            <a href="https://www.youtube.com/channel/UC0gOw4iy-6HwO01q-gA1B0Q"><img
+                    src="/Users/admin/Documents/web_labs/WebLab2/img/youtube.jpg"></a>
+        </p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/storage.js"></script>
+<script type="text/javascript" src="js/admin.js"></script>
+</body>
+</html>
